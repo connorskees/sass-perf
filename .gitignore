@@ -1,0 +1,9 @@
+*.s[ac]ss
+libsass
+sassc
+dart-sass*
+bulma
+duomo
+ibm-cloud-cognitive
+sass-a11ycolor
+bootstrap*
