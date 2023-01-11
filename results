@@ -1,193 +1,187 @@
-Benchmark 1: ./dart-sass/sass bootstrap/scss/bootstrap.scss
-  Time (mean ± σ):     177.9 ms ± 265.8 ms    [User: 78.5 ms, System: 31.8 ms]
-  Range (min … max):   104.0 ms … 1120.4 ms    28 runs
+Benchmark 1: ./dart-sass/sass bootstrap/scss/bootstrap.scss 
+  Time (mean ± σ):     140.7 ms ± 189.0 ms    [User: 81.9 ms, System: 27.1 ms]
+  Range (min … max):   103.3 ms … 1105.1 ms    28 runs
  
-Benchmark 2: grass bootstrap/scss/bootstrap.scss
-  Time (mean ± σ):      33.4 ms ±   1.9 ms    [User: 28.9 ms, System: 4.4 ms]
-  Range (min … max):    32.6 ms …  49.6 ms    87 runs
+Benchmark 2: grass bootstrap/scss/bootstrap.scss 
+  Time (mean ± σ):      33.3 ms ±   0.8 ms    [User: 28.3 ms, System: 4.9 ms]
+  Range (min … max):    32.8 ms …  38.0 ms    88 runs
  
-Benchmark 3: ./sassc/bin/sassc bootstrap/scss/bootstrap.scss
-  Time (mean ± σ):      70.6 ms ±   1.0 ms    [User: 63.2 ms, System: 7.3 ms]
-  Range (min … max):    69.1 ms …  75.5 ms    42 runs
- 
-Summary
-  'grass bootstrap/scss/bootstrap.scss' ran
-    2.11 ± 0.13 times faster than './sassc/bin/sassc bootstrap/scss/bootstrap.scss'
-    5.32 ± 7.95 times faster than './dart-sass/sass bootstrap/scss/bootstrap.scss'
-Benchmark 1: ./dart-sass/sass bulma/bulma.sass
-  Time (mean ± σ):     167.7 ms ±   2.1 ms    [User: 148.8 ms, System: 28.7 ms]
-  Range (min … max):   165.6 ms … 174.1 ms    17 runs
- 
-Benchmark 2: grass bulma/bulma.sass
-  Time (mean ± σ):      77.8 ms ±   2.1 ms    [User: 69.5 ms, System: 8.2 ms]
-  Range (min … max):    76.6 ms …  89.3 ms    38 runs
- 
-Benchmark 3: ./sassc/bin/sassc bulma/bulma.sass
-  Time (mean ± σ):     137.9 ms ±   3.3 ms    [User: 126.6 ms, System: 11.0 ms]
-  Range (min … max):   134.8 ms … 151.3 ms    21 runs
+Benchmark 3: ./sassc/bin/sassc bootstrap/scss/bootstrap.scss 
+  Time (mean ± σ):      70.6 ms ±   1.3 ms    [User: 62.1 ms, System: 8.4 ms]
+  Range (min … max):    68.9 ms …  75.5 ms    42 runs
  
 Summary
-  'grass bulma/bulma.sass' ran
-    1.77 ± 0.06 times faster than './sassc/bin/sassc bulma/bulma.sass'
-    2.15 ± 0.06 times faster than './dart-sass/sass bulma/bulma.sass'
-Benchmark 1: ./dart-sass/sass small-plain.scss
-  Time (mean ± σ):      12.5 ms ±  59.5 ms    [User: 4.0 ms, System: 4.9 ms]
-  Range (min … max):     8.4 ms … 1011.0 ms    284 runs
+  'grass bootstrap/scss/bootstrap.scss ' ran
+    2.12 ± 0.06 times faster than './sassc/bin/sassc bootstrap/scss/bootstrap.scss '
+    4.22 ± 5.67 times faster than './dart-sass/sass bootstrap/scss/bootstrap.scss '
+Benchmark 1: ./dart-sass/sass bulma/bulma.sass 
+  Time (mean ± σ):     222.4 ms ± 236.6 ms    [User: 144.4 ms, System: 31.9 ms]
+  Range (min … max):   163.5 ms … 1170.5 ms    18 runs
  
-Benchmark 2: grass small-plain.scss
-  Time (mean ± σ):       0.9 ms ±   0.2 ms    [User: 0.7 ms, System: 0.2 ms]
-  Range (min … max):     0.8 ms …   7.1 ms    2064 runs
+Benchmark 2: grass bulma/bulma.sass 
+  Time (mean ± σ):      78.2 ms ±   2.3 ms    [User: 72.4 ms, System: 5.5 ms]
+  Range (min … max):    76.7 ms …  87.1 ms    38 runs
  
-Benchmark 3: ./sassc/bin/sassc small-plain.scss
-  Time (mean ± σ):       1.7 ms ±   0.2 ms    [User: 1.3 ms, System: 0.4 ms]
-  Range (min … max):     1.6 ms …   7.4 ms    1363 runs
- 
-Summary
-  'grass small-plain.scss' ran
-    1.96 ± 0.46 times faster than './sassc/bin/sassc small-plain.scss'
-   14.61 ± 69.74 times faster than './dart-sass/sass small-plain.scss'
-Benchmark 1: ./dart-sass/sass large-plain.scss
-  Time (mean ± σ):      1.744 s ±  0.315 s    [User: 1.841 s, System: 0.197 s]
-  Range (min … max):    1.604 s …  2.631 s    10 runs
- 
-Benchmark 2: grass large-plain.scss
-  Time (mean ± σ):     737.7 ms ±   6.9 ms    [User: 586.8 ms, System: 147.4 ms]
-  Range (min … max):   729.1 ms … 754.7 ms    10 runs
- 
-Benchmark 3: ./sassc/bin/sassc large-plain.scss
-  Time (mean ± σ):      1.599 s ±  0.009 s    [User: 1.362 s, System: 0.232 s]
-  Range (min … max):    1.584 s …  1.612 s    10 runs
+Benchmark 3: ./sassc/bin/sassc bulma/bulma.sass 
+  Time (mean ± σ):     138.5 ms ±   4.6 ms    [User: 127.4 ms, System: 10.9 ms]
+  Range (min … max):   134.2 ms … 149.4 ms    20 runs
  
 Summary
-  'grass large-plain.scss' ran
-    2.17 ± 0.02 times faster than './sassc/bin/sassc large-plain.scss'
-    2.36 ± 0.43 times faster than './dart-sass/sass large-plain.scss'
-Benchmark 1: ./dart-sass/sass preceding-sparse-extend.scss
-  Time (mean ± σ):      1.713 s ±  0.319 s    [User: 1.821 s, System: 0.189 s]
-  Range (min … max):    1.600 s …  2.621 s    10 runs
+  'grass bulma/bulma.sass ' ran
+    1.77 ± 0.08 times faster than './sassc/bin/sassc bulma/bulma.sass '
+    2.85 ± 3.03 times faster than './dart-sass/sass bulma/bulma.sass '
+Benchmark 1: ./dart-sass/sass small-plain.scss 
+  Time (mean ± σ):      15.5 ms ±  81.0 ms    [User: 4.2 ms, System: 4.8 ms]
+  Range (min … max):     8.4 ms … 1015.5 ms    306 runs
  
-Benchmark 2: grass preceding-sparse-extend.scss
-  Time (mean ± σ):     721.9 ms ±   4.8 ms    [User: 573.4 ms, System: 146.5 ms]
-  Range (min … max):   716.6 ms … 733.4 ms    10 runs
+Benchmark 2: grass small-plain.scss 
+  Time (mean ± σ):       0.9 ms ±   0.1 ms    [User: 0.8 ms, System: 0.2 ms]
+  Range (min … max):     0.8 ms …   2.5 ms    1974 runs
  
-Benchmark 3: ./sassc/bin/sassc preceding-sparse-extend.scss
-  Time (mean ± σ):      1.631 s ±  0.010 s    [User: 1.401 s, System: 0.228 s]
-  Range (min … max):    1.614 s …  1.648 s    10 runs
- 
-Summary
-  'grass preceding-sparse-extend.scss' ran
-    2.26 ± 0.02 times faster than './sassc/bin/sassc preceding-sparse-extend.scss'
-    2.37 ± 0.44 times faster than './dart-sass/sass preceding-sparse-extend.scss'
-Benchmark 1: ./dart-sass/sass following-sparse-extend.scss
-  Time (mean ± σ):      1.701 s ±  0.316 s    [User: 1.816 s, System: 0.178 s]
-  Range (min … max):    1.589 s …  2.600 s    10 runs
- 
-Benchmark 2: grass following-sparse-extend.scss
-  Time (mean ± σ):     689.9 ms ±   4.5 ms    [User: 543.1 ms, System: 146.4 ms]
-  Range (min … max):   682.7 ms … 697.7 ms    10 runs
- 
-Benchmark 3: ./sassc/bin/sassc following-sparse-extend.scss
-  Time (mean ± σ):      1.608 s ±  0.012 s    [User: 1.362 s, System: 0.241 s]
-  Range (min … max):    1.594 s …  1.630 s    10 runs
+Benchmark 3: ./sassc/bin/sassc small-plain.scss 
+  Time (mean ± σ):       1.7 ms ±   0.1 ms    [User: 1.4 ms, System: 0.4 ms]
+  Range (min … max):     1.6 ms …   2.6 ms    1321 runs
  
 Summary
-  'grass following-sparse-extend.scss' ran
-    2.33 ± 0.02 times faster than './sassc/bin/sassc following-sparse-extend.scss'
-    2.47 ± 0.46 times faster than './dart-sass/sass following-sparse-extend.scss'
-Benchmark 1: ./dart-sass/sass preceding-dense-extend.scss
-  Time (mean ± σ):      2.573 s ±  0.528 s    [User: 2.401 s, System: 0.242 s]
-  Range (min … max):    2.155 s …  3.228 s    10 runs
+  'grass small-plain.scss ' ran
+    1.89 ± 0.24 times faster than './sassc/bin/sassc small-plain.scss '
+   17.56 ± 91.83 times faster than './dart-sass/sass small-plain.scss '
+Benchmark 1: ./dart-sass/sass large-plain.scss 
+  Time (mean ± σ):      2.103 s ±  0.532 s    [User: 1.819 s, System: 0.189 s]
+  Range (min … max):    1.588 s …  2.625 s    10 runs
  
-Benchmark 2: grass preceding-dense-extend.scss
-  Time (mean ± σ):      1.095 s ±  0.008 s    [User: 0.940 s, System: 0.154 s]
-  Range (min … max):    1.083 s …  1.106 s    10 runs
+Benchmark 2: grass large-plain.scss 
+  Time (mean ± σ):     711.9 ms ±   5.3 ms    [User: 578.4 ms, System: 133.3 ms]
+  Range (min … max):   706.0 ms … 720.8 ms    10 runs
  
-Benchmark 3: ./sassc/bin/sassc preceding-dense-extend.scss
-  Time (mean ± σ):      2.283 s ±  0.009 s    [User: 1.998 s, System: 0.283 s]
-  Range (min … max):    2.273 s …  2.302 s    10 runs
- 
-Summary
-  'grass preceding-dense-extend.scss' ran
-    2.08 ± 0.02 times faster than './sassc/bin/sassc preceding-dense-extend.scss'
-    2.35 ± 0.48 times faster than './dart-sass/sass preceding-dense-extend.scss'
-Benchmark 1: ./dart-sass/sass following-dense-extend.scss
-  Time (mean ± σ):      2.391 s ±  0.420 s    [User: 2.411 s, System: 0.245 s]
-  Range (min … max):    2.179 s …  3.195 s    10 runs
- 
-Benchmark 2: grass following-dense-extend.scss
-  Time (mean ± σ):      1.498 s ±  0.010 s    [User: 1.353 s, System: 0.144 s]
-  Range (min … max):    1.481 s …  1.516 s    10 runs
- 
-Benchmark 3: ./sassc/bin/sassc following-dense-extend.scss
-  Time (mean ± σ):      2.410 s ±  0.011 s    [User: 2.144 s, System: 0.261 s]
-  Range (min … max):    2.393 s …  2.427 s    10 runs
+Benchmark 3: ./sassc/bin/sassc large-plain.scss 
+  Time (mean ± σ):      1.558 s ±  0.011 s    [User: 1.347 s, System: 0.208 s]
+  Range (min … max):    1.542 s …  1.576 s    10 runs
  
 Summary
-  'grass following-dense-extend.scss' ran
-    1.60 ± 0.28 times faster than './dart-sass/sass following-dense-extend.scss'
-    1.61 ± 0.01 times faster than './sassc/bin/sassc following-dense-extend.scss'
-Benchmark 1: ./dart-sass/sass single-bootstrap.scss
-  Time (mean ± σ):     102.5 ms ±   0.8 ms    [User: 81.8 ms, System: 24.8 ms]
-  Range (min … max):   101.5 ms … 105.5 ms    29 runs
+  'grass large-plain.scss ' ran
+    2.19 ± 0.02 times faster than './sassc/bin/sassc large-plain.scss '
+    2.95 ± 0.75 times faster than './dart-sass/sass large-plain.scss '
+Benchmark 1: ./dart-sass/sass preceding-sparse-extend.scss 
+  Time (mean ± σ):      2.140 s ±  0.523 s    [User: 1.855 s, System: 0.189 s]
+  Range (min … max):    1.627 s …  2.645 s    10 runs
  
-Benchmark 2: grass single-bootstrap.scss
-  Time (mean ± σ):      33.3 ms ±   0.3 ms    [User: 28.5 ms, System: 4.7 ms]
-  Range (min … max):    32.7 ms …  34.7 ms    89 runs
+Benchmark 2: grass preceding-sparse-extend.scss 
+  Time (mean ± σ):     725.5 ms ±   5.2 ms    [User: 571.5 ms, System: 151.8 ms]
+  Range (min … max):   715.1 ms … 733.4 ms    10 runs
  
-Benchmark 3: ./sassc/bin/sassc single-bootstrap.scss
-  Time (mean ± σ):      70.7 ms ±   0.8 ms    [User: 62.3 ms, System: 8.2 ms]
-  Range (min … max):    69.5 ms …  74.0 ms    42 runs
- 
-Summary
-  'grass single-bootstrap.scss' ran
-    2.13 ± 0.03 times faster than './sassc/bin/sassc single-bootstrap.scss'
-    3.08 ± 0.04 times faster than './dart-sass/sass single-bootstrap.scss'
-Benchmark 1: ./dart-sass/sass large-bootstrap.scss
-  Time (mean ± σ):     666.5 ms ±   3.0 ms    [User: 660.1 ms, System: 69.1 ms]
-  Range (min … max):   662.5 ms … 673.0 ms    10 runs
- 
-Benchmark 2: grass large-bootstrap.scss
-  Time (mean ± σ):     377.4 ms ±   3.0 ms    [User: 325.6 ms, System: 50.3 ms]
-  Range (min … max):   374.1 ms … 383.8 ms    10 runs
- 
-Benchmark 3: ./sassc/bin/sassc large-bootstrap.scss
-  Time (mean ± σ):     751.1 ms ±   9.5 ms    [User: 688.0 ms, System: 59.8 ms]
-  Range (min … max):   740.4 ms … 769.0 ms    10 runs
+Benchmark 3: ./sassc/bin/sassc preceding-sparse-extend.scss 
+  Time (mean ± σ):      1.588 s ±  0.010 s    [User: 1.360 s, System: 0.225 s]
+  Range (min … max):    1.572 s …  1.600 s    10 runs
  
 Summary
-  'grass large-bootstrap.scss' ran
-    1.77 ± 0.02 times faster than './dart-sass/sass large-bootstrap.scss'
-    1.99 ± 0.03 times faster than './sassc/bin/sassc large-bootstrap.scss'
-Benchmark 1: ./dart-sass/sass a11ycolor.scss
-  Time (mean ± σ):     479.6 ms ± 429.6 ms    [User: 267.2 ms, System: 11.3 ms]
-  Range (min … max):   271.8 ms … 1308.1 ms    10 runs
+  'grass preceding-sparse-extend.scss ' ran
+    2.19 ± 0.02 times faster than './sassc/bin/sassc preceding-sparse-extend.scss '
+    2.95 ± 0.72 times faster than './dart-sass/sass preceding-sparse-extend.scss '
+Benchmark 1: ./dart-sass/sass following-sparse-extend.scss 
+  Time (mean ± σ):      1.919 s ±  0.480 s    [User: 1.821 s, System: 0.200 s]
+  Range (min … max):    1.606 s …  2.622 s    10 runs
  
-Benchmark 2: grass a11ycolor.scss
-  Time (mean ± σ):     150.6 ms ±   3.8 ms    [User: 148.5 ms, System: 1.6 ms]
-  Range (min … max):   148.0 ms … 164.6 ms    20 runs
+Benchmark 2: grass following-sparse-extend.scss 
+  Time (mean ± σ):     681.7 ms ±   4.1 ms    [User: 539.6 ms, System: 140.1 ms]
+  Range (min … max):   676.9 ms … 689.9 ms    10 runs
  
-Benchmark 3: ./sassc/bin/sassc a11ycolor.scss
-  Time (mean ± σ):     245.7 ms ±   3.6 ms    [User: 244.8 ms, System: 0.8 ms]
-  Range (min … max):   241.3 ms … 252.6 ms    12 runs
- 
-Summary
-  'grass a11ycolor.scss' ran
-    1.63 ± 0.05 times faster than './sassc/bin/sassc a11ycolor.scss'
-    3.18 ± 2.85 times faster than './dart-sass/sass a11ycolor.scss'
-Benchmark 1: ./dart-sass/sass duomo.scss
-  Time (mean ± σ):      1.211 s ±  0.009 s    [User: 1.188 s, System: 0.057 s]
-  Range (min … max):    1.200 s …  1.233 s    10 runs
- 
-Benchmark 2: grass duomo.scss
-  Time (mean ± σ):      4.638 s ±  0.008 s    [User: 3.749 s, System: 0.876 s]
-  Range (min … max):    4.626 s …  4.649 s    10 runs
- 
-Benchmark 3: ./sassc/bin/sassc duomo.scss
-  Time (mean ± σ):       1.7 ms ±   0.1 ms    [User: 1.3 ms, System: 0.4 ms]
-  Range (min … max):     1.6 ms …   2.9 ms    1343 runs
+Benchmark 3: ./sassc/bin/sassc following-sparse-extend.scss 
+  Time (mean ± σ):      1.564 s ±  0.008 s    [User: 1.340 s, System: 0.222 s]
+  Range (min … max):    1.556 s …  1.577 s    10 runs
  
 Summary
-  './sassc/bin/sassc duomo.scss' ran
-  731.62 ± 44.31 times faster than './dart-sass/sass duomo.scss'
- 2802.72 ± 168.41 times faster than 'grass duomo.scss'
-Benchmark 1: ./dart-sass/sass carbon.scss
+  'grass following-sparse-extend.scss ' ran
+    2.29 ± 0.02 times faster than './sassc/bin/sassc following-sparse-extend.scss '
+    2.82 ± 0.70 times faster than './dart-sass/sass following-sparse-extend.scss '
+Benchmark 1: ./dart-sass/sass preceding-dense-extend.scss 
+  Time (mean ± σ):      2.160 s ±  0.026 s    [User: 2.425 s, System: 0.233 s]
+  Range (min … max):    2.134 s …  2.225 s    10 runs
+ 
+Benchmark 2: grass preceding-dense-extend.scss 
+  Time (mean ± σ):      1.098 s ±  0.011 s    [User: 0.944 s, System: 0.152 s]
+  Range (min … max):    1.085 s …  1.116 s    10 runs
+ 
+Benchmark 3: ./sassc/bin/sassc preceding-dense-extend.scss 
+  Time (mean ± σ):      2.219 s ±  0.012 s    [User: 1.959 s, System: 0.255 s]
+  Range (min … max):    2.199 s …  2.239 s    10 runs
+ 
+Summary
+  'grass preceding-dense-extend.scss ' ran
+    1.97 ± 0.03 times faster than './dart-sass/sass preceding-dense-extend.scss '
+    2.02 ± 0.02 times faster than './sassc/bin/sassc preceding-dense-extend.scss '
+Benchmark 1: ./dart-sass/sass following-dense-extend.scss 
+  Time (mean ± σ):      2.301 s ±  0.312 s    [User: 2.450 s, System: 0.222 s]
+  Range (min … max):    2.178 s …  3.187 s    10 runs
+ 
+Benchmark 2: grass following-dense-extend.scss 
+  Time (mean ± σ):      1.501 s ±  0.010 s    [User: 1.352 s, System: 0.148 s]
+  Range (min … max):    1.488 s …  1.519 s    10 runs
+ 
+Benchmark 3: ./sassc/bin/sassc following-dense-extend.scss 
+  Time (mean ± σ):      2.329 s ±  0.010 s    [User: 2.052 s, System: 0.276 s]
+  Range (min … max):    2.316 s …  2.345 s    10 runs
+ 
+Summary
+  'grass following-dense-extend.scss ' ran
+    1.53 ± 0.21 times faster than './dart-sass/sass following-dense-extend.scss '
+    1.55 ± 0.01 times faster than './sassc/bin/sassc following-dense-extend.scss '
+Benchmark 1: ./dart-sass/sass single-bootstrap.scss 
+  Time (mean ± σ):     104.6 ms ±   0.9 ms    [User: 79.3 ms, System: 29.4 ms]
+  Range (min … max):   103.2 ms … 107.0 ms    28 runs
+ 
+Benchmark 2: grass single-bootstrap.scss 
+  Time (mean ± σ):      33.1 ms ±   0.3 ms    [User: 28.7 ms, System: 4.4 ms]
+  Range (min … max):    32.7 ms …  34.0 ms    86 runs
+ 
+Benchmark 3: ./sassc/bin/sassc single-bootstrap.scss 
+  Time (mean ± σ):      70.3 ms ±   1.0 ms    [User: 63.0 ms, System: 7.3 ms]
+  Range (min … max):    68.9 ms …  74.5 ms    42 runs
+ 
+Summary
+  'grass single-bootstrap.scss ' ran
+    2.13 ± 0.03 times faster than './sassc/bin/sassc single-bootstrap.scss '
+    3.16 ± 0.04 times faster than './dart-sass/sass single-bootstrap.scss '
+Benchmark 1: ./dart-sass/sass large-bootstrap.scss 
+  Time (mean ± σ):     685.2 ms ±   5.6 ms    [User: 680.5 ms, System: 68.5 ms]
+  Range (min … max):   677.1 ms … 697.9 ms    10 runs
+ 
+Benchmark 2: grass large-bootstrap.scss 
+  Time (mean ± σ):     382.1 ms ±   2.6 ms    [User: 334.3 ms, System: 47.7 ms]
+  Range (min … max):   378.9 ms … 386.9 ms    10 runs
+ 
+Benchmark 3: ./sassc/bin/sassc large-bootstrap.scss 
+  Time (mean ± σ):     768.5 ms ±   3.3 ms    [User: 706.0 ms, System: 61.8 ms]
+  Range (min … max):   761.1 ms … 774.0 ms    10 runs
+ 
+Summary
+  'grass large-bootstrap.scss ' ran
+    1.79 ± 0.02 times faster than './dart-sass/sass large-bootstrap.scss '
+    2.01 ± 0.02 times faster than './sassc/bin/sassc large-bootstrap.scss '
+Benchmark 1: ./dart-sass/sass a11ycolor.scss 
+  Time (mean ± σ):     272.9 ms ±   2.0 ms    [User: 262.5 ms, System: 11.3 ms]
+  Range (min … max):   268.3 ms … 274.9 ms    10 runs
+ 
+Benchmark 2: grass a11ycolor.scss 
+  Time (mean ± σ):     149.8 ms ±   1.1 ms    [User: 147.8 ms, System: 1.8 ms]
+  Range (min … max):   148.5 ms … 153.1 ms    19 runs
+ 
+Benchmark 3: ./sassc/bin/sassc a11ycolor.scss 
+  Time (mean ± σ):     245.3 ms ±   3.3 ms    [User: 243.2 ms, System: 1.6 ms]
+  Range (min … max):   242.6 ms … 254.0 ms    12 runs
+ 
+Summary
+  'grass a11ycolor.scss ' ran
+    1.64 ± 0.03 times faster than './sassc/bin/sassc a11ycolor.scss '
+    1.82 ± 0.02 times faster than './dart-sass/sass a11ycolor.scss '
+Benchmark 1: ./dart-sass/sass duomo.scss 
+  Time (mean ± σ):      1.225 s ±  0.010 s    [User: 1.209 s, System: 0.054 s]
+  Range (min … max):    1.214 s …  1.241 s    10 runs
+ 
+Benchmark 2: grass duomo.scss 
+  Time (mean ± σ):      4.646 s ±  0.019 s    [User: 3.790 s, System: 0.848 s]
+  Range (min … max):    4.624 s …  4.680 s    10 runs
+ 
+Summary
+  './dart-sass/sass duomo.scss ' ran
+    3.79 ± 0.03 times faster than 'grass duomo.scss '
