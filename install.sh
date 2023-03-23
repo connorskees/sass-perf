@@ -11,10 +11,18 @@ tar -xvzf dart-sass-1.57.1-linux-x64.tar.gz
 ./dart-sass/sass --version
 
 # install sassc (libsass)
-git clone https://github.com/sass/sassc.git
+# we need a special version of sassc because master is broken. see https://github.com/sass/sassc/pull/268
+# this does not affect the code used
+git clone https://github.com/SidorovD/sassc.git
 git clone https://github.com/sass/libsass.git
 make -C sassc -j4
 ./sassc/bin/sassc --version
+
+# install node+npm+yarn
+cargo install fnm
+fnm install 16
+eval $(fnm env)
+npm install -g yarn
 
 # install sass libraries
 git clone https://github.com/twbs/bootstrap --branch v4.1.3 --depth 1
